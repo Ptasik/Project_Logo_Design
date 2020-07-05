@@ -1,0 +1,193 @@
+body {
+    background: #ebebeb url('../Project 3 - Portfolio/Logo Background.png');
+    margin: 0;
+    font-family: 'Asap', sans-serif;
+}
+
+.header-container {
+    width: 100%;
+    background-color: #484848;
+    min-height: 100px;
+    position: fixed;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1024px;
+    min-height: 500px;
+    padding-top: 140px;
+
+}
+
+header {
+    margin: 0 auto;
+    max-width: 1024px;
+    min-height: 100px;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    padding: 10px 25px;
+    border: 1px solid white;
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    background-color: #00f490;
+    color: black;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+    justify-content: space-between;
+}
+
+.images {
+    background-color: #00f490;
+    width: 30%;
+    height: 10%;
+    margin-bottom: 25px;
+}
+
+.hide-desktop-only {
+    display: none;
+}
+
+.images img {
+    width: 100%;
+    height: auto;
+}
+
+.images p {
+    color: white;
+    margin: 0;
+    padding: 20px 25px;
+    font-size: .825rem;
+    line-height: 1.25rem;
+}
+
+.images p::first-line {
+    font-weight: bold;
+}
+
+span {
+    font-weight: bold;
+}
+
+.hide-nav {
+    display: none;
+}
+
+.desktop-menu {
+    display: block;
+}
+
+/*Tablet View*/
+@media (max-width: 768px) {
+    .header-container {
+        position: relative;
+    }
+
+    .images {
+        width: 45%;
+    }
+
+    .hide-desktop-only {
+        display: block;
+    }
+
+    header p {
+        padding: 40px 5px;
+    }
+
+    .container {
+        padding-top: 25px;
+    }
+
+    nav{
+        display: none;
+    }
+
+    nav a {
+        display: block;
+        margin: 0;
+    }
+
+    .hide-nav {
+        display: block;
+        padding-right: 30px;
+    }
+
+    .mobile-nav {
+        display: none;
+        position: absolute;
+        margin-left: -70px;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .mobile-nav a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        background-color: coral;
+        padding: 10px 30px;
+    }
+
+}
+
+/*Mobile View*/
+
+@media (max-width: 400px) {
+    .images {
+        width: 100%;
+    }
+
+    .hide-mobile {
+        display: none;
+    }
+
+    .hide-nav{
+        display: none;
+    }
+
+    .header-container {
+        position: relative;
+    }
+
+    header{
+        display: block;
+        text-align: center;
+    }
+
+    header p{
+        padding: 40px 0;
+        line-height: 1.25rem;
+
+    }
+
+    nav{
+        display: block;
+    }
+
+    nav a{
+        display: block;
+        margin:0;
+    }
+
+    .container{
+        padding-top: 25px;
+    }
+
+}
+
+
